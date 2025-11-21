@@ -14,8 +14,6 @@ Deployed seamlessly on **Vercel** with version control via **GitHub**.
 | **Astro** | ![Astro](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg) |
 | **Vue 3** | ![Vue](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg) |
 | **Tailwind CSS** | ![Tailwind](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Tailwind-CSS.svg) |
-| **shadcn/ui (Vue)** | 🌟 |
-| **Aceternity UI** | ✨ |
 | **TypeScript** | ![TypeScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg) |
 
 ### **DevOps & Tools**
