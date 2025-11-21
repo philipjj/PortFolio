@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio – Built with Astro, Vue 3, Tailwind & shadcn/ui
+# 🌐 Personal Portfolio – Built with Astro, Vue 3, Tailwind & TypeScript
 
 A modern, fast, and responsive personal portfolio website built using **Astro** with **Vue 3 islands**, styled with **Tailwind CSS**, and enhanced with **shadcn/ui / Aceternity UI** components.  
 Deployed seamlessly on **Vercel** with version control via **GitHub**.
