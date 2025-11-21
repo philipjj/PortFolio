@@ -18,8 +18,8 @@ Deployed seamlessly on **Vercel** with version control via **GitHub**.
 ---
 
 ### **DevOps & Tools**
-| Tool | Icon |
-|------|-------|
+| Tool       | Icon |
+|-----------|-------|
 | **GitHub** | ![GitHub](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/GitHub.svg) |
 | **Vercel** | ![Vercel](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Vercel.svg) |
 | **ESLint + Prettier** | ![ESLint](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/ESLint.svg) |
