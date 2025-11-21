@@ -12,8 +12,6 @@
 
 > A **lightning-fast**, fully responsive, and modern personal portfolio template built on **Astro**, leveraging **Vue 3 islands** for interactivity, and styled with **Tailwind CSS**. Deployed effortlessly on Vercel.
 
-
-
 ---
 
 ## ✨ Key Features & Performance
@@ -44,6 +42,31 @@ This project is engineered for performance and a modern development experience:
 
 ---
 
+## 🚀 Project Structure
+
+Inside of your Astro + Starlight project, you'll see the following folders and files:
+
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   └── docs/
+│   └── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
+
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+
+Static assets, like favicons, can be placed in the `public/` directory.
+
+---
+
 ## ⚙️ Getting Started
 
 Follow these steps to get a local copy of the project up and running.
@@ -57,7 +80,7 @@ You must have **Node.js** (v18+) and a package manager (npm, yarn, or pnpm) inst
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/philipjj/PortFolio
-    cd PortFolio
+    cd portfolio
     ```
 
 2.  **Install dependencies:**
@@ -67,9 +90,21 @@ You must have **Node.js** (v18+) and a package manager (npm, yarn, or pnpm) inst
     # or pnpm install
     ```
 
-### Development
+### Development Commands
 
-Start the development server:
+All commands are run from the root of the project, from a terminal:
 
-```bash
-npm run dev
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+---
+
+## 👀 Want to learn more?
+
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
