@@ -56,8 +56,8 @@ You must have **Node.js** (v18+) and a package manager (npm, yarn, or pnpm) inst
 
 1.  **Clone the repository:**
     ```bash
-    git clone [YOUR_REPO_URL]
-    cd [YOUR_REPO_NAME]
+    git clone https://github.com/philipjj/PortFolio
+    cd PortFolio
     ```
 
 2.  **Install dependencies:**
