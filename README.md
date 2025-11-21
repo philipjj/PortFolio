@@ -10,19 +10,19 @@ Deployed seamlessly on **Vercel** with version control via **GitHub**.
 ### **Frameworks & Libraries**
 | Technology | Icon |
 |-----------|-------|
-| **Astro** | ![Astro](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg) |
-| **Vue 3** | ![Vue](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg) |
+| **Astro** | ![Astro](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Astro.svg) |
+| **Vue 3** | ![Vue](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Vue.js.svg) |
 | **Tailwind CSS** | ![Tailwind](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Tailwind-CSS.svg) |
-| **TypeScript** | ![TypeScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg) |
+| **TypeScript** | ![TypeScript](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/TypeScript.svg) |
 
 ---
 
 ### **DevOps & Tools**
 | Tool | Icon |
 |------|-------|
-| **GitHub** | ![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg) |
-| **Vercel** | ![Vercel](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg) |
-| **ESLint + Prettier** | ![ESLint](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg) |
+| **GitHub** | ![GitHub](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/GitHub.svg) |
+| **Vercel** | ![Vercel](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Vercel.svg) |
+| **ESLint + Prettier** | ![ESLint](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/ESLint.svg) |
 
 ---
 
