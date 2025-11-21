@@ -1,15 +1,13 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import { redirect } from 'astro:middleware';
+
+export function getStaticPaths() {
+  return [{ params: {}, props: {} }];
+}
+
+export async function get({ redirect }) {
+  return redirect('/');
+}
 ---
 
-<BaseLayout title="About Me">
-  <Header slot="header" />
-  <section class="about container mx-auto py-12">
-    <h1 class="text-4xl font-bold mb-6">About Me</h1>
-    <p class="text-lg mb-4">This is where you can write about yourself, your skills, experience, and what you're passionate about.</p>
-    <p class="text-lg">Feel free to add more sections like skills, experience, education, etc.</p>
-  </section>
-  <Footer slot="footer" />
-</BaseLayout>
+<!-- This page redirects to the main portfolio page -->

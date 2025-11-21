@@ -1,4 +1,4 @@
-# 🌌 Modern Portfolio Stack 
+# 🌌 Modern Portfolio Stack
 
 <p align="center">
   <a href="[DEPLOYED_URL_HERE]" target="_blank">
@@ -44,24 +44,25 @@ This project is engineered for performance and a modern development experience:
 
 ## 🚀 Project Structure
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+Inside of your Astro portfolio project, you'll see the following folders and files:
 
 ```
 .
 ├── public/
 ├── src/
 │   ├── assets/
-│   ├── content/
-│   │   └── docs/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
 │   └── content.config.ts
 ├── astro.config.mjs
 ├── package.json
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Content for your portfolio can be added to `src/pages/` and `src/components/` as needed.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+Images can be added to `src/assets/` and embedded in your pages with a relative link.
 
 Static assets, like favicons, can be placed in the `public/` directory.
 
@@ -107,4 +108,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Check out [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
