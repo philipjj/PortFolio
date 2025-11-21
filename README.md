@@ -15,8 +15,6 @@ Deployed seamlessly on **Vercel** with version control via **GitHub**.
 | **Tailwind CSS** | ![Tailwind](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Tailwind-CSS.svg) |
 | **TypeScript** | ![TypeScript](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/TypeScript.svg) |
 
----
-
 ### **DevOps & Tools**
 | Tool       | Icon |
 |-----------|-------|
