@@ -24,7 +24,22 @@ npm run build
 
 Notes
 
-- Replace the hero placeholder in `src/components/Hero.vue` with your actual image (use `<img src="/assets/your-image.png" alt="">`).
+- Replace the hero placeholder in `src/components/Hero.vue` with your actual image (use the responsive files in `src/assets/`).
+
+- Recommended: add optimized responsive variants (480, 768, 1200 widths) and WebP versions.
+
+- Example `ImageMagick` command to generate responsive PNG/WebP variants locally:
+
+```powershell
+magick convert "your-image.png" -resize 480x -quality 80 src/assets/artwork-480.png
+magick convert "your-image.png" -resize 768x -quality 80 src/assets/artwork-768.png
+magick convert "your-image.png" -resize 1200x -quality 82 src/assets/artwork-1200.png
+magick convert src/assets/artwork-480.png -quality 80 src/assets/artwork-480.webp
+magick convert src/assets/artwork-768.png -quality 80 src/assets/artwork-768.webp
+magick convert src/assets/artwork-1200.png -quality 82 src/assets/artwork-1200.webp
+```
+
+- The project currently includes placeholder SVG variants (`src/assets/artwork-480.svg`, `artwork-768.svg`, `artwork-1200.svg`) and an OG placeholder (`src/assets/og-image.svg`). Replace or overwrite these files with your exported images.
 - This template uses `client:visible` on the Hero so animations run when visible. You can change hydration directives as needed for performance.
 - To deploy to Vercel: push to GitHub and import the repo in Vercel. The project uses `astro build` by default.
 

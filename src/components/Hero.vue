@@ -9,9 +9,13 @@
       </div>
     </div>
     <div class="relative">
-      <div ref="art" class="w-full h-80 md:h-96 rounded-xl overflow-hidden bg-gradient-to-br from-pink-600 via-purple-600 to-indigo-700 shadow-2xl">
-        <!-- Placeholder for your image. Replace with <img> tag pointing to your artwork. -->
-        <div class="w-full h-full flex items-center justify-center text-white/60">Your artwork here</div>
+      <div ref="art" class="w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl bg-slate-900/20">
+        <!-- Responsive picture using svg placeholders. Replace these files with your optimized images. -->
+        <picture>
+          <source type="image/webp" srcset="/src/assets/artwork-480.webp 480w, /src/assets/artwork-768.webp 768w, /src/assets/artwork-1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw">
+          <source type="image/svg+xml" srcset="/src/assets/artwork-480.svg 480w, /src/assets/artwork-768.svg 768w, /src/assets/artwork-1200.svg 1200w" sizes="(max-width: 768px) 100vw, 50vw">
+          <img src="/src/assets/artwork-1200.svg" alt="Artwork" loading="lazy" class="w-full h-full object-cover">
+        </picture>
       </div>
     </div>
   </div>
