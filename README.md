@@ -3,6 +3,8 @@
 A modern, fast, and responsive personal portfolio website built using **Astro** with **Vue 3 islands**, styled with **Tailwind CSS**, and enhanced with **shadcn/ui / Aceternity UI** components.  
 Deployed seamlessly on **Vercel** with version control via **GitHub**.
 
+---
+
 ## 🚀 Tech Stack
 
 ### **Frameworks & Libraries**
@@ -12,6 +14,8 @@ Deployed seamlessly on **Vercel** with version control via **GitHub**.
 | **Vue 3** | ![Vue](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg) |
 | **Tailwind CSS** | ![Tailwind](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Tailwind-CSS.svg) |
 | **TypeScript** | ![TypeScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg) |
+
+---
 
 ### **DevOps & Tools**
 | Tool | Icon |
@@ -37,8 +41,6 @@ Deployed seamlessly on **Vercel** with version control via **GitHub**.
 
 ## 📁 Project Structure
 
-```txt
-/
 ├── src/
 │   ├── components/
 │   │   ├── Hero.vue
