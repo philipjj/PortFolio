@@ -14,18 +14,14 @@ Deployed seamlessly on **Vercel** with version control via **GitHub**.
 | **Vue 3** | ![Vue](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Vue.js.svg) |
 | **Tailwind CSS** | ![Tailwind](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Tailwind-CSS.svg) |
 | **TypeScript** | ![TypeScript](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/TypeScript.svg) |
-
 ---
-
 ### **DevOps & Tools**
 | Tool | Icon |
 |------|-------|
 | **GitHub** | ![GitHub](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/GitHub.svg) |
 | **Vercel** | ![Vercel](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Vercel.svg) |
 | **ESLint + Prettier** | ![ESLint](https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/ESLint.svg) |
-
 ---
-
 ## ✨ Features
 
 - ⚡ **Lightning fast** Astro architecture (zero JS by default)
