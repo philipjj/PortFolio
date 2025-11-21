@@ -1,0 +1,10 @@
+---
+const { class: className } = Astro.props;
+import { cn } from "../../utils/cn";
+
+const baseStyles = "text-sm text-muted-foreground";
+---
+
+<p class={cn(baseStyles, className)}>
+  <slot />
+</p>

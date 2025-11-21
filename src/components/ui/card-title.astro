@@ -1,0 +1,10 @@
+---
+const { class: className } = Astro.props;
+import { cn } from "../../utils/cn";
+
+const baseStyles = "text-2xl font-semibold leading-none tracking-tight";
+---
+
+<h3 class={cn(baseStyles, className)}>
+  <slot />
+</h3>

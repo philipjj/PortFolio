@@ -1,13 +1,25 @@
 ---
+import ThemeToggle from "./ThemeToggle.astro";
 ---
-<header class="fixed top-0 left-0 right-0 z-50 p-4 bg-gray-900 bg-opacity-90 backdrop-blur-sm text-white">
+<header class="fixed top-0 left-0 right-0 z-50 p-4 bg-background bg-opacity-90 backdrop-blur-sm border-b">
   <nav class="container mx-auto flex justify-between items-center">
-    <a href="#hero" class="text-xl font-bold hover:text-blue-400 transition-colors">Philip</a>
-    <ul class="flex space-x-6">
-      <li><a href="#about" class="hover:text-blue-400 transition-colors">About</a></li>
-      <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
-      <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
-    </ul>
+    <a href="#hero" class="text-xl font-bold">Philip</a>
+    <div class="flex items-center space-x-6">
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-primary transition-colors">About</a></li>
+        <li><a href="#projects" class="hover:text-primary transition-colors">Projects</a></li>
+        <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+      </ul>
+      <div class="flex items-center space-x-4">
+        <a href="https://github.com/philipjj" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors hidden md:block">
+          <img src="https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/GitHub.svg" alt="GitHub" class="w-5 h-5" loading="lazy" />
+        </a>
+        <a href="https://linkedin.com/in/philipjj" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors hidden md:block">
+          <img src="https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/LinkedIn.svg" alt="LinkedIn" class="w-5 h-5" loading="lazy" />
+        </a>
+        <ThemeToggle />
+      </div>
+    </div>
   </nav>
 </header>
 <script>

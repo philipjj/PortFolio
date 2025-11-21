@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import "../styles/global.css";
+import ThemeProvider from "../components/ThemeProvider.astro";
 ---
 
 <!doctype html>
@@ -17,10 +18,12 @@ import "../styles/global.css";
     <title>{title}</title>
   </head>
   <body>
-    <slot name="header" />
-    <main>
-      <slot />
-    </main>
-    <slot name="footer" />
+    <ThemeProvider>
+      <slot name="header" />
+      <main>
+        <slot />
+      </main>
+      <slot name="footer" />
+    </ThemeProvider>
   </body>
 </html>

@@ -1,0 +1,33 @@
+---
+const { theme, children } = Astro.props;
+---
+
+<script>
+  (function() {
+    const defaultTheme = window.localStorage.getItem('theme') || 'system';
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    let themeToApply = defaultTheme;
+    if (defaultTheme === 'system') {
+      themeToApply = systemPrefersDark ? 'dark' : 'light';
+    }
+    
+    document.documentElement.setAttribute('data-theme', themeToApply);
+  })();
+  
+  function setTheme(theme) {
+    localStorage.setItem('theme', theme);
+    
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let themeToApply = theme;
+    if (theme === 'system') {
+      themeToApply = systemPrefersDark ? 'dark' : 'light';
+    }
+    
+    document.documentElement.setAttribute('data-theme', themeToApply);
+  }
+</script>
+
+<div>
+  <slot />
+</div>
