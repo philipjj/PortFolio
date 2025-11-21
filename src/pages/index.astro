@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="My Portfolio">
+  <Header slot="header" />
+  <section class="hero bg-gray-900 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-5xl font-bold mb-4">Hi, I'm [Your Name]</h2>
+      <p class="text-xl mb-8">A passionate developer specializing in [Your Expertise].</p>
+      <a href="/projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">View My Work</a>
+    </div>
+  </section>
+  <Footer slot="footer" />
+</BaseLayout>
