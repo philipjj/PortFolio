@@ -14,18 +14,18 @@
 
 ---
 
-## ✨ Key Features & Performance
+##Key Features & Performance
 
 This project is engineered for performance and a modern development experience:
 
-* ⚡ **Astro Performance:** Achieves incredible speed with Astro's zero-JS-by-default architecture, resulting in high Lighthouse scores.
-* 🧩 **Vue 3 Islands:** Incorporates interactive components (like forms, complex animations, or carousels) only where needed, thanks to the **Islands Architecture**.
-* 🎨 **Modern Styling:** Utilizes **Tailwind CSS** for rapid, utility-first styling and includes sophisticated, ready-to-use components from **shadcn/ui** / **Aceternity UI**.
-* 📱 **Fully Responsive:** Mobile-first design ensures a perfect display on any device.
-* 🌙 **Theming:** Includes an optional **Dark Mode** for a better viewing experience.
-* 🔎 **SEO Ready:** Optimized with OpenGraph tags, a sitemap, and meta descriptions for better search visibility.
-* 🚀 **CI/CD:** Seamless, automatic deployment via **Vercel** connected to **GitHub**.
-* ✅ **Developer Experience:** Enhanced with **TypeScript** for type safety and **ESLint + Prettier** for consistent code quality.
+* **Astro Performance:** Achieves incredible speed with Astro's zero-JS-by-default architecture, resulting in high Lighthouse scores.
+* **Vue 3 Islands:** Incorporates interactive components (like forms, complex animations, or carousels) only where needed, thanks to the **Islands Architecture**.
+* **Modern Styling:** Utilizes **Tailwind CSS** for rapid, utility-first styling and includes sophisticated, ready-to-use components from **shadcn/ui** / **Aceternity UI**.
+* **Fully Responsive:** Mobile-first design ensures a perfect display on any device.
+* **Theming:** Includes an optional **Dark Mode** for a better viewing experience.
+* **SEO Ready:** Optimized with OpenGraph tags, a sitemap, and meta descriptions for better search visibility.
+* **CI/CD:** Seamless, automatic deployment via **Vercel** connected to **GitHub**.
+* **Developer Experience:** Enhanced with **TypeScript** for type safety and **ESLint + Prettier** for consistent code quality.
 
 ---
 
