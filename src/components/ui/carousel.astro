@@ -8,13 +8,16 @@ import CardTitle from "./card-title.astro";
 
 <div class="relative group">
   <div class="overflow-hidden py-4">
+    <!-- Single row for infinite loop -->
     <div class="animate-loop flex">
       <Card class="glass-card m-4 min-w-[300px] transition-all duration-300 hover:scale-105">
-        <div class="bg-muted border-2 border-dashed w-full h-48" />
+        <div class="bg-muted border-2 border-dashed w-full h-48 flex items-center justify-center">
+          <span class="text-2xl font-bold text-gray-500">#1</span>
+        </div>
         <CardHeader>
-          <CardTitle>E-commerce Platform</CardTitle>
+          <CardTitle>Project #1</CardTitle>
           <CardDescription>
-            A full-featured online store with payment processing and inventory management.
+            A showcase project with innovative features and modern technologies.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -35,11 +38,13 @@ import CardTitle from "./card-title.astro";
         </CardContent>
       </Card>
       <Card class="glass-card m-4 min-w-[300px] transition-all duration-300 hover:scale-105">
-        <div class="bg-muted border-2 border-dashed w-full h-48" />
+        <div class="bg-muted border-2 border-dashed w-full h-48 flex items-center justify-center">
+          <span class="text-2xl font-bold text-gray-500">#2</span>
+        </div>
         <CardHeader>
-          <CardTitle>Task Management App</CardTitle>
+          <CardTitle>Project #2</CardTitle>
           <CardDescription>
-            A productivity application with drag-and-drop interface and team collaboration.
+            Another amazing project demonstrating cutting-edge development practices.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -60,11 +65,13 @@ import CardTitle from "./card-title.astro";
         </CardContent>
       </Card>
       <Card class="glass-card m-4 min-w-[300px] transition-all duration-300 hover:scale-105">
-        <div class="bg-muted border-2 border-dashed w-full h-48" />
+        <div class="bg-muted border-2 border-dashed w-full h-48 flex items-center justify-center">
+          <span class="text-2xl font-bold text-gray-500">#3</span>
+        </div>
         <CardHeader>
-          <CardTitle>Portfolio Website</CardTitle>
+          <CardTitle>Project #3</CardTitle>
           <CardDescription>
-            A responsive portfolio website built with Astro and Tailwind CSS.
+            A remarkable project showcasing advanced development skills and architecture.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -84,13 +91,16 @@ import CardTitle from "./card-title.astro";
           </div>
         </CardContent>
       </Card>
-      <!-- Duplicated cards for infinite loop -->
+
+      {/* Duplicate projects for seamless looping */}
       <Card class="glass-card m-4 min-w-[300px] transition-all duration-300 hover:scale-105">
-        <div class="bg-muted border-2 border-dashed w-full h-48" />
+        <div class="bg-muted border-2 border-dashed w-full h-48 flex items-center justify-center">
+          <span class="text-2xl font-bold text-gray-500">#1</span>
+        </div>
         <CardHeader>
-          <CardTitle>E-commerce Platform</CardTitle>
+          <CardTitle>Project #1</CardTitle>
           <CardDescription>
-            A full-featured online store with payment processing and inventory management.
+            A showcase project with innovative features and modern technologies.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -101,7 +111,7 @@ import CardTitle from "./card-title.astro";
             </span>
             <span class="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary/80 text-secondary-foreground backdrop-blur-sm">
               <img src="https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/Node.js.svg" alt="Node.js" width="12" height="12" class="w-3 h-3" loading="lazy" />
-              Node.js
+                Node.js
             </span>
             <span class="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary/80 text-secondary-foreground backdrop-blur-sm">
               <img src="https://cdn.jsdelivr.net/gh/philipjj/My-Icons@main/icons/svg/MongoDB.svg" alt="MongoDB" width="12" height="12" class="w-3 h-3" loading="lazy" />
@@ -111,11 +121,13 @@ import CardTitle from "./card-title.astro";
         </CardContent>
       </Card>
       <Card class="glass-card m-4 min-w-[300px] transition-all duration-300 hover:scale-105">
-        <div class="bg-muted border-2 border-dashed w-full h-48" />
+        <div class="bg-muted border-2 border-dashed w-full h-48 flex items-center justify-center">
+          <span class="text-2xl font-bold text-gray-500">#2</span>
+        </div>
         <CardHeader>
-          <CardTitle>Task Management App</CardTitle>
+          <CardTitle>Project #2</CardTitle>
           <CardDescription>
-            A productivity application with drag-and-drop interface and team collaboration.
+            Another amazing project demonstrating cutting-edge development practices.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -136,11 +148,13 @@ import CardTitle from "./card-title.astro";
         </CardContent>
       </Card>
       <Card class="glass-card m-4 min-w-[300px] transition-all duration-300 hover:scale-105">
-        <div class="bg-muted border-2 border-dashed w-full h-48" />
+        <div class="bg-muted border-2 border-dashed w-full h-48 flex items-center justify-center">
+          <span class="text-2xl font-bold text-gray-500">#3</span>
+        </div>
         <CardHeader>
-          <CardTitle>Portfolio Website</CardTitle>
+          <CardTitle>Project #3</CardTitle>
           <CardDescription>
-            A responsive portfolio website built with Astro and Tailwind CSS.
+            A remarkable project showcasing advanced development skills and architecture.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -170,9 +184,10 @@ import CardTitle from "./card-title.astro";
     }
 
     .animate-loop {
-      animation: loop 30s linear infinite;
+      animation: loop 60s linear infinite;
       display: flex;
       gap: 0;
+      width: 200%; /* Double the width to accommodate duplicate items */
     }
 
     .animate-loop:hover {

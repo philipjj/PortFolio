@@ -1,13 +1,23 @@
 ---
-import { redirect } from 'astro:middleware';
-
-export function getStaticPaths() {
-  return [{ params: {}, props: {} }];
-}
-
-export async function get({ redirect }) {
-  return redirect('/');
-}
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Carousel from "../components/ui/carousel.astro";
 ---
 
-<!-- This page redirects to the main portfolio page -->
+<BaseLayout title="My Projects">
+  <Header slot="header" />
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-primary">My Projects</h2>
+      <div class="relative w-full overflow-hidden py-8">
+        <div class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-background from-0% via-background/90 via-50% to-transparent to-100% z-10"></div>
+        <Carousel />
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
