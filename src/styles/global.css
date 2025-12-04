@@ -4,59 +4,105 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --primary: 222.2 47.4% 11.2%;
+    /* A clean, professional light theme */
+    --background: 240 5% 96%; /* Light Gray */
+    --foreground: 240 10% 4%; /* Near Black */
+    
+    --card: 240 5% 96%;
+    --card-foreground: 240 10% 4%;
+
+    --popover: 240 5% 96%;
+    --popover-foreground: 240 10% 4%;
+
+    --primary: 217 91% 60%; /* Vibrant Blue */
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 100% 50%;
+
+    --secondary: 240 5% 84%; /* Medium Gray */
+    --secondary-foreground: 240 10% 4%;
+
+    --muted: 240 5% 90%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 240 5% 90%;
+    --accent-foreground: 240 10% 4%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
-    --ring: 215 20.2% 65.1%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 217 91% 60%;
+
     --radius: 0.5rem;
-    --glass-background: 210 40% 98% / 0.1;
+    --glass-background: 240 5% 100% / 0.3;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --popover: 224 71% 4%;
-    --popover-foreground: 215 20.2% 65.1%;
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    /* A sleek, modern dark theme */
+    --background: 240 10% 4%; /* Near Black */
+    --foreground: 210 40% 98%; /* Near White */
+
+    --card: 240 10% 4%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 10% 4%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%; /* Vibrant Blue (Consistent) */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 240 4% 16%; /* Dark Gray */
     --secondary-foreground: 210 40% 98%;
-    --accent: 217.2 32.6% 17.5%;
+
+    --muted: 240 4% 12%;
+    --muted-foreground: 240 4% 65%;
+
+    --accent: 240 4% 12%;
     --accent-foreground: 210 40% 98%;
+
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
-    --ring: 217.2 32.6% 17.5%;
-    --glass-background: 210 40% 98% / 0.1;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 217 91% 60%;
+    
+    --glass-background: 240 4% 12% / 0.05;
   }
 }
 
 @layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Shared hover animation used by ThemeToggle -> apply to header items */
+  .hover-animate {
+    /* Styling only — avoid forcing padding so buttons can control size */
+    @apply bg-[hsl(var(--glass-background))] border border-input backdrop-blur-sm transition-colors;
+  }
+
+  .hover-animate:hover {
+    @apply bg-accent text-accent-foreground;
+  }
+
+  /* Lighter variant for inline header links */
+  .header-link {
+    @apply rounded-md px-2 py-1 transition-colors;
+  }
+
+  .header-link:hover {
+    @apply bg-accent text-accent-foreground;
   }
 }

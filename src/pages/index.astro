@@ -26,7 +26,7 @@ import Carousel from "../components/ui/carousel.astro";
         A passionate full-stack developer specializing in creating modern web applications with JavaScript, TypeScript, and Astro.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <Button as="a" href="#projects" variant="default">View My Work</Button>
+        <Button as="a" href="#projects" variant="outline">View My Work</Button>
         <Button as="a" href="#contact" variant="outline">Contact Me</Button>
       </div>
     </div>
@@ -35,7 +35,7 @@ import Carousel from "../components/ui/carousel.astro";
   <!-- About Section -->
   <section id="about" class="about py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Me</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-primary">About Me</h2>
       <div class="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
         <div class="md:w-1/3 flex justify-center">
           <div class="bg-muted border-2 border-dashed rounded-xl w-64 h-64" />
@@ -82,7 +82,7 @@ import Carousel from "../components/ui/carousel.astro";
   <!-- Projects Section -->
   <section id="projects" class="projects py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">My Projects</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-primary">My Projects</h2>
       <div class="relative w-full overflow-hidden py-8">
         <div class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-background from-0% via-background/90 via-50% to-transparent to-100% z-10"></div>
         <Carousel />
@@ -93,7 +93,7 @@ import Carousel from "../components/ui/carousel.astro";
   <!-- Contact Section -->
   <section id="contact" class="contact py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Get In Touch</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-primary">Get In Touch</h2>
       <div class="max-w-2xl mx-auto">
         <Card>
           <CardHeader>
@@ -113,7 +113,7 @@ import Carousel from "../components/ui/carousel.astro";
               <div>
                 <Textarea id="message" placeholder="Your message here..." rows={5} />
               </div>
-              <Button type="submit" class="w-full">Send Message</Button>
+              <Button type="submit" size="lg" class="w-full hover-animate">Send Message</Button>
             </form>
           </CardContent>
         </Card>

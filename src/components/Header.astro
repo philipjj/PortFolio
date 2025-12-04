@@ -1,14 +1,14 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
 ---
-<header class="fixed top-0 left-0 right-0 z-50 p-4 bg-[hsl(var(--glass-background))] backdrop-blur-xs">
+<header class="fixed top-0 left-0 right-0 z-50 p-4 bg-[hsl(var(--glass-background))] backdrop-blur-md">
   <nav class="container mx-auto flex justify-between items-center">
-    <a href="#hero" class="text-xl font-bold">Philip</a>
+    <a href="#hero" class="text-xl font-bold header-link">Philip</a>
     <div class="flex items-center space-x-6">
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#about" class="hover:text-primary transition-colors">About</a></li>
-        <li><a href="#projects" class="hover:text-primary transition-colors">Projects</a></li>
-        <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+      <ul class="hidden md:flex items-center space-x-6 bg-[hsl(var(--glass-background))] border border-input backdrop-blur-sm rounded-lg px-4 py-2">
+        <li><a href="#about" class="header-link">About</a></li>
+        <li><a href="#projects" class="header-link">Projects</a></li>
+        <li><a href="#contact" class="header-link">Contact</a></li>
       </ul>
       <div class="flex items-center space-x-4">
         <ThemeToggle />
