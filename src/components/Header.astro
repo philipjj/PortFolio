@@ -1,7 +1,7 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
 ---
-<header class="fixed top-0 left-0 right-0 z-50 p-4 bg-background bg-opacity-90 backdrop-blur-sm border-b">
+<header class="fixed top-0 left-0 right-0 z-50 p-4 bg-[hsl(var(--glass-background))] backdrop-blur-xs">
   <nav class="container mx-auto flex justify-between items-center">
     <a href="#hero" class="text-xl font-bold">Philip</a>
     <div class="flex items-center space-x-6">
@@ -17,17 +17,10 @@ import ThemeToggle from "./ThemeToggle.astro";
   </nav>
 </header>
 <script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-
-      window.scrollTo({
-        top: targetElement.offsetTop - 80, // Account for fixed header
-        behavior: 'smooth'
-      });
-    });
+  import SmoothScroll from 'smooth-scroll';
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800,
+    speedAsDuration: true,
+    offset: 80 
   });
 </script>
