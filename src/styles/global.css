@@ -4,37 +4,39 @@
 
 @layer base {
   :root {
-    /* A clean, professional light theme */
-    --background: 240 5% 96%; /* Light Gray */
-    --foreground: 240 10% 4%; /* Near Black */
-    
-    --card: 240 5% 96%;
-    --card-foreground: 240 10% 4%;
+    /* Light theme palette (user-provided):
+       #fafafa, #e4e5f1, #d2d3db, #9394a5, #484b6a
+       Converted to H S L components for use with hsl(var(--...)). */
+    --background: 0 0% 98%; /* #fafafa */
+    --foreground: 235 19% 35%; /* #484b6a */
 
-    --popover: 240 5% 96%;
-    --popover-foreground: 240 10% 4%;
+    --card: 0 0% 98%; /* #fafafa */
+    --card-foreground: 235 19% 35%; /* #484b6a */
 
-    --primary: 217 91% 60%; /* Vibrant Blue */
-    --primary-foreground: 210 40% 98%;
+    --popover: 0 0% 98%; /* #fafafa */
+    --popover-foreground: 235 19% 35%; /* #484b6a */
 
-    --secondary: 240 5% 84%; /* Medium Gray */
-    --secondary-foreground: 240 10% 4%;
+    --primary: 235 19% 35%; /* #484b6a (primary/dark text color) */
+    --primary-foreground: 0 0% 98%; /* #fafafa */
 
-    --muted: 240 5% 90%;
-    --muted-foreground: 240 4% 46%;
+    --secondary: 235 32% 92%; /* #e4e5f1 */
+    --secondary-foreground: 235 19% 35%; /* #484b6a */
 
-    --accent: 240 5% 90%;
-    --accent-foreground: 240 10% 4%;
+    --muted: 234 11% 84%; /* #d2d3db */
+    --muted-foreground: 237 9% 61%; /* #9394a5 */
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 235 32% 92%; /* #e4e5f1 */
+    --accent-foreground: 235 19% 35%; /* #484b6a */
 
-    --border: 240 6% 90%;
-    --input: 240 6% 90%;
-    --ring: 217 91% 60%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 234 11% 84%; /* #d2d3db */
+    --input: 234 11% 84%; /* #d2d3db */
+    --ring: 237 9% 61%; /* #9394a5 */
 
     --radius: 0.5rem;
-    --glass-background: 240 5% 90% / 0.4;
+    --glass-background: 234 11% 84% / 0.4; /* translucent #d2d3db */
   }
 
   .dark {
@@ -109,4 +111,5 @@
   .glass-section {
     @apply bg-[hsla(var(--glass-background))] backdrop-blur-lg border border-[hsla(var(--border)/0.3)] shadow-2xl shadow-[hsla(var(--border)/0.2)];
   }
+  
 }
