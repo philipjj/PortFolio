@@ -8,8 +8,12 @@ import CardTitle from "./ui/card-title.astro";
 
 <div class="flex justify-center">
   <Card class="glass-card m-4 w-full max-w-sm transition-all duration-300 hover:scale-105">
-    <div class="bg-muted border-2 border-dashed w-full h-48 flex items-center justify-center">
-      <span class="text-2xl font-bold text-gray-500">My Portfolio</span>
+    <div class="w-full h-48 overflow-hidden">
+      <img
+        src="/portimg.png"
+        alt="Portfolio Project"
+        class="w-full h-full object-cover"
+      />
     </div>
     <CardHeader>
       <CardTitle>Personal Portfolio Website</CardTitle>
