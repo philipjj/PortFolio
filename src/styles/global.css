@@ -34,7 +34,7 @@
     --ring: 217 91% 60%;
 
     --radius: 0.5rem;
-    --glass-background: 240 5% 100% / 0.3;
+    --glass-background: 240 5% 90% / 0.4;
   }
 
   .dark {
@@ -67,7 +67,7 @@
     --input: 240 4% 16%;
     --ring: 217 91% 60%;
     
-    --glass-background: 240 4% 12% / 0.05;
+    --glass-background: 240 4% 12% / 0.3;
   }
 }
 
@@ -104,5 +104,9 @@
 
   .header-link:hover {
     @apply bg-accent text-accent-foreground;
+  }
+
+  .glass-section {
+    @apply bg-[hsla(var(--glass-background))] backdrop-blur-lg border border-[hsla(var(--border)/0.3)] shadow-2xl shadow-[hsla(var(--border)/0.2)];
   }
 }
